@@ -2,7 +2,6 @@ plugins {
     id 'org.springframework.boot' version '2.2.0.BUILD-SNAPSHOT'
     id 'java'
 }
-
 apply plugin: 'io.spring.dependency-management'
 
 group = 'com.stergioulas.tutorials.springbootrsocket'
