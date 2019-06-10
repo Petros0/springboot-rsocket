@@ -7,9 +7,9 @@ This project aims to give an idea on how to work with the RSocket protocol with 
 
 ## Getting started
 
-./gradlew :producer:bootRun
+`./gradlew :producer:bootRun`
 
-./gradlew :consumer:bootRun
+`./gradlew :consumer:bootRun`
 
 Navigate to:
 
