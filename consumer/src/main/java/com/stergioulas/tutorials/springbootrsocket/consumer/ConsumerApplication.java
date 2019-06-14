@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.http.MediaType;
 import org.springframework.messaging.rsocket.RSocketRequester;
 import org.springframework.messaging.rsocket.RSocketStrategies;
+import org.springframework.util.MimeType;
 import org.springframework.util.MimeTypeUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -40,7 +41,9 @@ public class ConsumerApplication {
     @Bean
     RSocketRequester requester(RSocketStrategies strategies) {
         return RSocketRequester.wrap(
-                rSocket(), MimeTypeUtils.APPLICATION_JSON, strategies
+                rSocket(),
+		        MimeTypeUtils.APPLICATION_JSON,
+		        strategies
         );
     }
 }
